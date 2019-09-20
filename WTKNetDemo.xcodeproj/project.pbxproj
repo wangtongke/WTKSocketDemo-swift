@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D0A258BCE880C133AC6A9E /* Pods_WTKNetDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86E3956ED32A7FA8B4D102B /* Pods_WTKNetDemo.framework */; };
 		F5B8E490232F2B00004E4148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8E48F232F2B00004E4148 /* AppDelegate.swift */; };
 		F5B8E492232F2B00004E4148 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8E491232F2B00004E4148 /* ViewController.swift */; };
 		F5B8E495232F2B00004E4148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B8E493232F2B00004E4148 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		F5B8E49A232F2B02004E4148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B8E498232F2B02004E4148 /* LaunchScreen.storyboard */; };
 		F5B8E4A5232F2B02004E4148 /* WTKNetDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8E4A4232F2B02004E4148 /* WTKNetDemoTests.swift */; };
 		F5B8E4B0232F2B02004E4148 /* WTKNetDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8E4AF232F2B02004E4148 /* WTKNetDemoUITests.swift */; };
+		F5B8E4BF232F2D1D004E4148 /* SocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8E4BD232F2D1D004E4148 /* SocketViewController.swift */; };
+		F5B8E4C0232F2D1D004E4148 /* SocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B8E4BE232F2D1D004E4148 /* SocketViewController.xib */; };
+		F5E6FF792330B9F300525DE9 /* WTKSocketTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E6FF782330B9F300525DE9 /* WTKSocketTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23C37C6899C327799444EE28 /* Pods-WTKNetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTKNetDemo.release.xcconfig"; path = "Target Support Files/Pods-WTKNetDemo/Pods-WTKNetDemo.release.xcconfig"; sourceTree = "<group>"; };
+		928D94A4A8A70D05C98D3CC7 /* Pods-WTKNetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTKNetDemo.debug.xcconfig"; path = "Target Support Files/Pods-WTKNetDemo/Pods-WTKNetDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F5B8E48C232F2B00004E4148 /* WTKNetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTKNetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B8E48F232F2B00004E4148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5B8E491232F2B00004E4148 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		F5B8E4AB232F2B02004E4148 /* WTKNetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTKNetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B8E4AF232F2B02004E4148 /* WTKNetDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTKNetDemoUITests.swift; sourceTree = "<group>"; };
 		F5B8E4B1232F2B02004E4148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B8E4BD232F2D1D004E4148 /* SocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketViewController.swift; sourceTree = "<group>"; };
+		F5B8E4BE232F2D1D004E4148 /* SocketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocketViewController.xib; sourceTree = "<group>"; };
+		F5E6FF782330B9F300525DE9 /* WTKSocketTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTKSocketTool.swift; sourceTree = "<group>"; };
+		F86E3956ED32A7FA8B4D102B /* Pods_WTKNetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTKNetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D0A258BCE880C133AC6A9E /* Pods_WTKNetDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25E9949818A0AF8A0D333368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				928D94A4A8A70D05C98D3CC7 /* Pods-WTKNetDemo.debug.xcconfig */,
+				23C37C6899C327799444EE28 /* Pods-WTKNetDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F5B8E483232F2B00004E4148 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +101,8 @@
 				F5B8E4A3232F2B02004E4148 /* WTKNetDemoTests */,
 				F5B8E4AE232F2B02004E4148 /* WTKNetDemoUITests */,
 				F5B8E48D232F2B00004E4148 /* Products */,
+				25E9949818A0AF8A0D333368 /* Pods */,
+				F90FDBA41545CB8AFE20E2D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +119,11 @@
 		F5B8E48E232F2B00004E4148 /* WTKNetDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F5E6FF782330B9F300525DE9 /* WTKSocketTool.swift */,
 				F5B8E48F232F2B00004E4148 /* AppDelegate.swift */,
 				F5B8E491232F2B00004E4148 /* ViewController.swift */,
+				F5B8E4BD232F2D1D004E4148 /* SocketViewController.swift */,
+				F5B8E4BE232F2D1D004E4148 /* SocketViewController.xib */,
 				F5B8E493232F2B00004E4148 /* Main.storyboard */,
 				F5B8E496232F2B02004E4148 /* Assets.xcassets */,
 				F5B8E498232F2B02004E4148 /* LaunchScreen.storyboard */,
@@ -125,6 +150,14 @@
 			path = WTKNetDemoUITests;
 			sourceTree = "<group>";
 		};
+		F90FDBA41545CB8AFE20E2D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F86E3956ED32A7FA8B4D102B /* Pods_WTKNetDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5B8E4B4232F2B02004E4148 /* Build configuration list for PBXNativeTarget "WTKNetDemo" */;
 			buildPhases = (
+				BA8F2164C08FFA5EE2A62E63 /* [CP] Check Pods Manifest.lock */,
 				F5B8E488232F2B00004E4148 /* Sources */,
 				F5B8E489232F2B00004E4148 /* Frameworks */,
 				F5B8E48A232F2B00004E4148 /* Resources */,
+				262FF7D4EF0CBEC879D40CFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B8E49A232F2B02004E4148 /* LaunchScreen.storyboard in Resources */,
+				F5B8E4C0232F2D1D004E4148 /* SocketViewController.xib in Resources */,
 				F5B8E497232F2B02004E4148 /* Assets.xcassets in Resources */,
 				F5B8E495232F2B00004E4148 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +287,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		262FF7D4EF0CBEC879D40CFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTKNetDemo/Pods-WTKNetDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTKNetDemo/Pods-WTKNetDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WTKNetDemo/Pods-WTKNetDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8F2164C08FFA5EE2A62E63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WTKNetDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5B8E488232F2B00004E4148 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F5B8E492232F2B00004E4148 /* ViewController.swift in Sources */,
+				F5B8E4BF232F2D1D004E4148 /* SocketViewController.swift in Sources */,
 				F5B8E490232F2B00004E4148 /* AppDelegate.swift in Sources */,
+				F5E6FF792330B9F300525DE9 /* WTKSocketTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +510,13 @@
 		};
 		F5B8E4B5232F2B02004E4148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928D94A4A8A70D05C98D3CC7 /* Pods-WTKNetDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J969F42JW8;
 				INFOPLIST_FILE = WTKNetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,10 +530,13 @@
 		};
 		F5B8E4B6232F2B02004E4148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C37C6899C327799444EE28 /* Pods-WTKNetDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J969F42JW8;
 				INFOPLIST_FILE = WTKNetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
