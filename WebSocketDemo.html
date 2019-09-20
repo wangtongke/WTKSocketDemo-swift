@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebSocket</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var sock = null;
+		var wsurl = "ws://127.0.0.1:2222/web"
+		window.onload = function() {
+			console.log("onload");
+			sock = new WebSocket(wsurl);
+			sock.onopen = function() {
+				console.log("connected to" + wsurl);
+			}
+			sock.onclose = function(e) {
+				console.log("connection closed(" + e.code + ")");
+			}
+			sock.onmessage = function(e) {
+				console.log("收到消息: " + e.data);
+				// alert(e.data)
+				var list = document.getElementById('list');
+				var liObj =  document.createElement("li");
+				liObj.innerHTML = e.data;
+				list.append(liObj);
+			}
+		};
+		function send() {
+				var msg = document.getElementById('message').value;
+				sock.send(msg);
+			};
+	</script>
+	<h1>WebSocket Echo Test</h1>
+	<form>
+		<p>
+			Message: <input id="message" type="" value="Hello, world!">
+		</p>
+	</form>
+	<button onclick="send();">Send Message</button>
+	<h2>socket record</h2>
+	<ol id="list">
+		
+	</ol>
+</body>
+</html>
