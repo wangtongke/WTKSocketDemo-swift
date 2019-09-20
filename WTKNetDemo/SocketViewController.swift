@@ -84,6 +84,7 @@ extension SocketViewController {
     }
     func websocketDidConnect() {
         debugPrint("connectSuccess......")
+        Toast.show("连接成功")
     }
     
     func websocketDidDisconnect() {
